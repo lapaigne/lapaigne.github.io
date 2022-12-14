@@ -1,0 +1,27 @@
+﻿.wrapper {
+    display: grid;
+    grid-area: cw;
+    grid-template-rows: 1fr 1fr auto 1fr;
+}
+
+.content-item {
+    padding: 45px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-areas: ". cw .";
+    height: 100%;
+}
+
+.op-wrapper {
+    display: grid;
+    width: 100%;
+    column-gap: 3px;
+}
+
+#calc-op-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+}
+
+#poly-op-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+}

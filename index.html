@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="js/calculator/Complex.js"></script>
+    <script src="js/calculator/Vector.js"></script>
+    <script src="js/calculator/Matrix.js"></script>
+
+    <script src="js/calculator/RealCalculator.js"></script>
+    <script src="js/calculator/ComplexCalculator.js"></script>
+    <script src="js/calculator/VectorCalculator.js"></script>
+    <script src="js/calculator/MatrixCalculator.js"></script>
+
+    <script src="js/calculator/Calculator.js"></script>
+    <script src="js/calculator/CalculatorMenu.js"></script>
+
+    <script src="js/polynomial/Member.js"></script>
+    <script src="js/polynomial/Polynomial.js"></script>
+    <script src="js/polynomial/PolynomialCalculator.js"></script>
+    <script src="js/polynomial/PolynomialMenu.js"></script>
+
+    <script src="js/misc/main.js"></script>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <link rel="stylesheet" href="css/topbar.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div id="topbar">
+            <button class="topbar-btn text btn-stl" data-content="calculator">Калькулятор</button>
+            <button class="topbar-btn text btn-stl" data-content="polynomial">Полиномы</button>
+        </div>
+        <div id="content">
+            <div class="content-item" id="calculator">
+                <div id="calc-wrapper" class="wrapper">
+                    <textarea id="calc-num1" placeholder="A" class="text"></textarea>
+                    <textarea id="calc-num2" placeholder="B" class="text"></textarea>
+                    <div id="calc-op-wrapper" class="op-wrapper">
+                        <button class="btn-stl calc-op text" data-operand="add">A+B</button>
+                        <button class="btn-stl calc-op text" data-operand="sub">A-B</button>
+                        <button class="btn-stl calc-op text" data-operand="mult">A·B</button>
+                        <button class="btn-stl calc-op text" data-operand="prod">A*B</button>
+                        <button class="btn-stl calc-op text" data-operand="div">A/B</button>
+                        <button class="btn-stl calc-op text" data-operand="pow">A<sup>B</sup></button>
+                    </div>
+                    <textarea id="calc-result" placeholder="=" class="text"></textarea>
+                </div>
+            </div>
+            <div class="content-item hidden" id="polynomial">
+                <div id="poly-wrapper" class="wrapper">
+                    <textarea id="poly-num1" placeholder="Полином P" class="text"></textarea>
+                    <textarea id="poly-num2" placeholder="Полином Q" class="text"></textarea>
+                    <div id="poly-op-wrapper" class="op-wrapper">
+                        <button class="btn-stl poly-op text" data-operand="add">P+Q</button>
+                        <button class="btn-stl poly-op text" data-operand="sub">P-Q</button>
+                        <button class="btn-stl poly-op text" data-operand="mult">P·Q</button>
+                    </div>
+                    <textarea id="poly-result" placeholder="=" class="text"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+﻿.hidden {
+    display: none !important;
+    background-color: blue;
+}
+
+.grid-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+    display: grid;
+    grid-template-rows: 70px auto;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    background: linear-gradient(0, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../img/dirt.jpg');
+    background-size: 128px;
+    background-repeat: repeat;
+}
+
+.content {
+    height: 100%;
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #111;
+    color: #efefef;
+    border: solid 4px #efefef;
+    resize: none;
+    padding: 5px;
+}
+
+.btn-stl {
+    border: solid 4px #000;
+    image-rendering: pixelated;
+    background: url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
+    text-rendering: optimizeLegibility;
+    text-shadow: 4px 4px #000A;
+    padding-bottom: 5px;
+    text-align: center;
+    height: 80px;
+    color: #DDD;
+    box-shadow: inset -4px -8px #0006, inset 4px 4px #FFF7;
+}
+
+.btn-stl:hover {
+    color: yellow;
+    box-shadow: inset -4px -8px #0006, inset 4px 4px #FFF7, inset 0 0 0 1000px rgba(100, 100, 255, .45);
+}
+
+.text {
+    font-family: "Mojangles";
+    font-size: 24px;
+}
+
+@font-face {
+    font-family: "Mojangles";
+    src: url("../fonts/mojangles.ttf");
+}

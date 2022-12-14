@@ -1,0 +1,12 @@
+﻿#topbar {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.topbar-btn {
+    height: 70px;
+    padding-bottom: 5px;
+    margin-left: -2px;
+    margin-right: -2px;
+}
