@@ -6,9 +6,10 @@
 
     getValue(x) {
         const calc = new Calculator();
+        x = calc.getEntity(x);
         return this.poly.reduce(
             (s, elem) => calc.add(
-                s, calc.prod(elem.value, calc.pow(x, elem.power))
+                s, calc.prod(calc.pow(x, elem.power), elem.value)
             ), calc.zero(x)
         );
     }

@@ -1,5 +1,5 @@
 ﻿class Matrix {
-    constructor(values = []) {
+    constructor(values = [[]]) {
         this.values = [];
         values.forEach((arr, i) => {
             this.values.push([]);

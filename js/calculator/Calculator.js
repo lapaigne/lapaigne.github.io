@@ -13,9 +13,10 @@
                 }
                 return new Complex(arr[0] - 0, arr[1] - 0);
             }
+            if (arr[1] === '')
+                return new Complex(0, 1);
             return new Complex(0, arr[1] - 0);
         }
-
     }
 
     getVector(str) {

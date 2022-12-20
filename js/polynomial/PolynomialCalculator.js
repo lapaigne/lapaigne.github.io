@@ -44,7 +44,6 @@
         const members = [];
         a.poly.forEach(elementA => {
             const member = b.poly.find(elementB => elementB.power === elementA.power);
-            console.log(member)
             if (member) {
                 members.push(new Member(elementA.value + member.value, elementA.power));
             }
